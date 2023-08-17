@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/STAR.css" rel="stylesheet">
 
  
 </head>
@@ -43,8 +44,8 @@
 
       <nav id="navbar" class="navbar">
        
-         
-          <li><a class="nav-link scrollto active" href="#hero">About Me</a></li> 
+         <ul>
+          <li><a class="nav-link scrollto active" href="#about">About Me</a></li> 
           <li><a class="nav-link scrollto" href="#services">Services</a></li>   
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>  
           <li><a class="nav-link scrollto" href="#team">Referees</a></li>  
@@ -58,25 +59,43 @@
   </header><!-- End Header -->
 
    <!-- ======= Hero Section ======= -->
-   <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Sidney Mwanzia</h1>
-          <h2>I am a student at Pioneer University-Nairobi age 20 years old studying Information Technology.I am a junior Web developer with skills in HTML, CSS, JavaScript, C++, and Java. Passionate about designing and developing responsive and user-friendly websites
-            and applications. Seeking to join a web development company and contribute to its success.</h2>
-          <div>
-            <a href="portfolio.html" class="btn-get-started scrollto">See Portfolio</a>
-          </div>
+   
+   <section class="card" data-state="#about">
+    <div class="card-header">
+      <div class="card-cover" style="background-image: url('assets/image/design/motivation.png')"></div>
+      <img class="card-avatar" src="assets/image/sidpictures/sid2.jpg" alt="avatar" />
+      <h1 class="card-fullname">Sidney Kyalo Mwanzia</h1>
+      <br>
+      <h2 class="card-jobtitle">Developer...etc</h2>
+    </div>
+    <div class="card-main">
+      <div class="card-section is-active" id="about">
+        <div class="card-content">
+          <div class="card-subtitle">ABOUT</div>
+          <p class="card-desc">A young talent with many skills. A developer and writer at heart and a salesman in the making.
+          </p>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+        <div class="card-social">
+                <a href="https://wa.me/254114748466"><i class="bi bi-whatsapp"  target="_blank"></i></a>
+                <a href="https://twitter.com/Otaku_no_weeb?s=09" class="twitter"><i class="bx bxl-twitter"  target="_blank"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100082277933268&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"  target="_blank"></i></a>
+                <a href="https://www.instagram.com/_sido_k?utm_source=qr&r=nametag" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://join.skype.com/invite/Br4yEHFzhRGK" class="google-plus"><i class="bx bxl-skype"  target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/sidney-kyalo-9b0877250" class="linkedin"><i class="bx bxl-linkedin"  target="_blank"></i></a>
         </div>
       </div>
+     
+     
+      <div class="card-buttons">
+       
+        <button> <a class="nav-link scrollto active" href="#timeline">EXPERIENCE</a></button>
+        <button><a class="nav-link scrollto" href="#portfolio">Portfolio</a></button>
+        <button><a class="nav-link scrollto" href="#contact">Contact</a></button>
+      </div>
     </div>
+  </section>
 
-  </section><!-- End Hero -->
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -218,11 +237,12 @@
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Web design</a></h4>
               <p class="description">With a great eye for design i can help design websites that have a feel. Proficient in 
-                <ul>
+               <center>
+                <ol>
                   <li>Figma</li>
                   <li>Canva</li>
-                </ul> 
-              
+                </ol> 
+              </center> 
               </p>
             </div>
           </div>
@@ -232,12 +252,14 @@
               <div class="icon"><i class="bi bi-code-slash"></i></div>
               <h4 class="title"><a href="">Front-End Development</a></h4>
               <p class="description">Proficient in <strong>Front-end Languages</strong>
-              <ul>
+                <center>
+              <ol>
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>JAVASCRIPT</li> 
                 <li>Bootstrap Library</li>
-              </ul>
+              </ol>
+            </center>
             </p>
             </div>
           </div>
@@ -247,12 +269,22 @@
               <div class="icon"><i class="bi bi-code-slash"></i></div>
               <h4 class="title"><a href="">Back-End Development</a></h4>
               <p class="description">Proficient in <strong>Back-end languges</strong> like 
-                <ul>
+              <center> 
+                <ol>
                   <li>C++</li>
                   <li>C#</li>
-                 </ul>and
-                 <strong>Database</strong> languges like 
-                 <li>MySql</li> </p>
+                </ol>
+                </center>
+               </p>
+                
+               <p class="description">
+                 and <strong>Database</strong> languges like </p> 
+                <center>
+                  <ol>
+                    <li>MySql</li>
+                  </ol>
+                </center> 
+              </p>
             </div>
           </div>
 
@@ -279,13 +311,14 @@
               <div class="icon"><i class="bi bi-pen-fill"></i></div>
               <h4 class="title"><a href="">Writing</a></h4>
               <p class="description">I offer different writing services  
+              <center>
                 <ol>
                   <li>Copywriting</li>
                   <li>Esssay Writing</li>
                   <li>Ghost writing</li>
                   <li>Technical writing...etc</li>
-
               </ol>
+            </center>
             </p>
             </div>
           </div>
@@ -303,11 +336,13 @@
               <div class="icon"><i class="bi bi-suit-spade"></i></i></div>
               <h4 class="title"><a href="">Croupier</a></h4>
               <p class="description">Deal various casino games from 
-                <ul>
+                <center>
+                <ol>
                   <li>7-card poker</li>
                   <li>Roulette</li>
                   <li>Bacarrat...etc</li>
-                </ul> 
+                </ol> 
+              </center>
               </p>
             </div>
           </div>
@@ -537,24 +572,50 @@
 
         <div class="row">
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="member">
-              <img src="assets/image/team/Patricia.jpg" class="img-fluid" alt="">
+              <img src="assets/image/team/Frank.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Patricia Wanjiru </h4>
-                  <span>Collegue</span>
+                  <h4>Francis Mbenge</h4>
+                  <span> Former Collegue</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-whatsapp"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/FrancisMbenge?t=96uDopVfEtitWU8ILOcrSg&s=09"><i class="bi bi-twitter"  target="_blank"></i></a>
+                  <a href="https://www.facebook.com/mbenge.francis"><i class="bi bi-facebook"  target="_blank"></i></a>
+                  <a href="https://instagram.com/francis_mbenge?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i class="bi bi-instagram"  target="_blank"></i></a>
+                  <a href="https://wa.me/254795496931" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                  <a href=""><i class="bi bi-phone"  target="_blank"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
+
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/image/team/Anita.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Anita Mocheche</h4>
+                  <span> Former Collegue</span>
+                  
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"  target="_blank"></i></a>
+                  <a href=""><i class="bi bi-facebook"  target="_blank"></i></a>
+                  <a href="https://wa.me/254714855889"><i class="bi bi-whatsapp"  target="_blank"></i></a>
+                  <a href=""><i class="bi bi-phone"  target="_blank"></i></a>
+                  <a href=""><i class="bi bi-linkedin"  target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="member">
               <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
@@ -564,51 +625,36 @@
                   <span>Product Manager</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-twitter"  target="_blank"></i></a>
+                  <a href=""><i class="bi bi-facebook"  target="_blank"></i></a>
+                  <a href=""><i class="bi bi-instagram"  target="_blank"></i></a>
+                  <a href=""><i class="bi bi-linkedin"  target="_blank"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="assets/image/team/Patricia.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
+                  <h4>Patricia Wanjiru </h4>
+                  <span>Collegue</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                
+                  <a href=""><i class="bi bi-phone"  target="_blank"></i></a>
+                  <a href="https://wa.me/254115578858"><i class="bi bi-whatsapp"  target="_blank"></i></a>
+                 
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
+         
         </div>
 
       </div>
@@ -675,18 +721,19 @@
   
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3> contacts</h3>
-             
-                <strong>Phone 1:</strong> +254 114746466<br>
-                <strong>Phone 2:</strong> +254 718030898<br>
-                <strong>Email 1:</strong> sidokyalo@gmail.com<br>
-                <strong>Email 2:</strong> sidneymwanzia223@gmail.com<br>
-              </p>
+              <div class="social-links mt-3">
+                <a href="tel:+254114746466"><i class="bi bi-phone"></i>+254114746466</a><br>
+                <a href="tel:+254718030898"><i class="bi bi-phone"></i>+254718030898</a><br>
+                <a href="mailto:sidokyalo@gmail.com" target="_blank"><i class="bi bi-envelope"></i>sidokyalo@gmail.com</a><br>
+                <a href="mailto:sidneymwanzia223@gmail.com" target="_blank"><i class="bi bi-envelope"></i>sidneymwanzia223@gmail.com</a><br>
+              </div>
+              
             </div>
   
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#hero">About Me</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#about">About Me</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#team">Referees</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
@@ -695,27 +742,37 @@
             </div>
   
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>My Services</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Front-end Development</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Back-End Development</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Sales and Marketing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Writing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Transcription</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Croupier</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Web%20Design&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20web%20design%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Web Design</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Front%20End%20Development&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Front%20End%20Developer%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Front-end Development</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Back%20End%20Development&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Back%20End%20Developer%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Back-End Development</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Sales%20and%20Marketing&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Sales%20and%20Marketing%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Sales and Marketing</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Graphic%20Design&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Graphic%20Design%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Graphic Design</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Writing&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Writing%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Writing</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Transcription&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Transcription%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Transcription</a></li>
+
+<li><i class="bx bx-chevron-right"></i> <a href="mailto:sidneymwanzia223@gmail.com?subject=Croupier&body=Hello%20Sidney,%0A%0AI'm%20interested%20in%20your%20Croupier%20services.%20Can%20you%20provide%20me%20with%20more%20information?">Croupier</a></li>
+
               </ul>
             </div>
   
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>My Social Networks</h4>
+
               <div class="social-links mt-3">
-                <a href="https://twitter.com/Otaku_no_weeb?s=09" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100082277933268&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/_sido_k?utm_source=qr&r=nametag" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://join.skype.com/invite/Br4yEHFzhRGK" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="https://www.linkedin.com/in/sidney-kyalo-9b0877250" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://wa.me/254114748466"><i class="bi bi-whatsapp"  target="_blank"></i></a>
+                <a href="https://twitter.com/Otaku_no_weeb?s=09" class="twitter"><i class="bx bxl-twitter"  target="_blank"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100082277933268&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"  target="_blank"></i></a>
+                <a href="https://www.instagram.com/_sido_k?utm_source=qr&r=nametag" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://join.skype.com/invite/Br4yEHFzhRGK" class="google-plus"><i class="bx bxl-skype"  target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/sidney-kyalo-9b0877250" class="linkedin"><i class="bx bxl-linkedin"  target="_blank"></i></a>
               </div>
             </div>
   
@@ -727,7 +784,7 @@
     </footer>
     <!-- End Footer -->
   
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#about" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
